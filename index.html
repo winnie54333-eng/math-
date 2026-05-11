@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Time in Malaysia - Absolute Value Functions</title>
+  <style>
+    /* 基础样式优化 */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    body { background: #f0f4f0; color: #1b3a2f; line-height: 1.6; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+    /* 顶部横幅 */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      margin-bottom: 40px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #2e7d32, #66bb6a);
+      color: white;
+      box-shadow: 0 15px 35px rgba(46,125,50,0.2);
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; letter-spacing: 1px; }
+    header h2 { font-weight: 300; opacity: 0.9; font-size: 1.1rem; }
+
+    /* 网格布局：1列显示图片，或者根据需要改为3列 */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    /* 卡片设计 */
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e0e0e0;
+    }
+    .card:hover { transform: translateY(-10px); }
+
+    .card-content { padding: 20px; }
+    .card h3 { color: #2e7d32; margin-bottom: 8px; font-size: 1.2rem; }
+    .card p { color: #666; font-size: 0.9rem; margin-bottom: 15px; }
+
+    /* 图片容器 */
+    .img-container {
+      width: 100%;
+      height: 400px; /* 增加高度以展示数学图表详情 */
+      background: #f9f9f9;
+      overflow: hidden;
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* 确保数学坐标轴不被裁剪 */
+      background-color: white;
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      .img-container { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>My Time in Malaysia</h1>
+      <h2>WEN XINYI · ZHU ZIYI · WU XIN</h2>
+      <p style="margin-top:10px; font-style:italic;">Mathematical Exploration: Absolute Value Function</p >
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <div class="img-container">
+          < img src="image1.png" alt="Escalator Edge Function">
+        </div>
+        <div class="card-content">
+          <h3>Escalator Edge</h3>
+          <p>Height as a Function of Horizontal Distance along the escalator.</p >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          < img src="image2.png" alt="Basket Edge Function">
+        </div>
+        <div class="card-content">
+          <h3>Basket Edge</h3>
+          <p>Height as a Function of Horizontal Distance from the corner.</p >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-container">
+          < img src="image3.png" alt="U-Shaped Curve Function">
+        </div>
+        <div class="card-content">
+          <h3>U-Shaped Curve</h3>
+          <p>Height as a Function of Horizontal Distance from the center.</p >
+        </div>
+      </div>
+    </div>
+
+    <footer style="text-align:center; margin-top:50px; color:#888; font-size:0.8rem;">
+      &copy; 2026 Malaysia Mathematics Project
+    </footer>
+  </div>
+
+</body>
+</html>
